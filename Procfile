@@ -1,1 +1,1 @@
-web: ./target/release/lavagna_server 0.0.0.0:80
+web: ./target/release/lavagna_server 0.0.0.0:$PORT
