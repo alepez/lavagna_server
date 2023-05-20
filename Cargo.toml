@@ -1,7 +1,10 @@
 [package]
-name = "matchbox_server"
-version = "0.6.0"
-authors = ["Johan Helsing <johanhelsing@gmail.com>"]
+name = "lavagna_server"
+version = "2.0.0"
+authors = [
+  "Johan Helsing <johanhelsing@gmail.com>",
+  "Alessandro Pezzato <alessandro@pezzato.net>",
+]
 edition = "2021"
 description = "A signaling server for WebRTC peer-to-peer full-mesh networking"
 license = "MIT OR Apache-2.0"
@@ -12,12 +15,12 @@ categories = [
   "wasm",
   "web-programming",
 ]
-repository = "https://github.com/johanhelsing/matchbox"
-homepage = "https://github.com/johanhelsing/matchbox"
-readme = "../README.md"
+repository = "https://github.com/alepez/lavagna_server"
+homepage = "https://github.com/alepez/lavagna_server"
+readme = "README.md"
 
 [dependencies]
-matchbox_protocol = { path = "../matchbox_protocol", version = "0.6", features = [
+matchbox_protocol = { git = "https://github.com/johanhelsing/matchbox", rev = "5ebe9a3", features = [
   "json",
 ] }
 axum = { version = "0.6", features = ["ws"] }
